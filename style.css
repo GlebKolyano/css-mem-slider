@@ -113,3 +113,10 @@ input {
   background-color: rgb(255, 187, 0);
 }
 
+#slide1:checked~.slider-bottom .slider-text .slide__text:nth-child(1),
+#slide2:checked~.slider-bottom .slider-text .slide__text:nth-child(2),
+#slide3:checked~.slider-bottom .slider-text .slide__text:nth-child(3),
+#slide4:checked~.slider-bottom .slider-text .slide__text:nth-child(4) {
+  display: block;
+  animation: animate-text 0.5s;
+}

@@ -120,3 +120,15 @@ input {
   display: block;
   animation: animate-text 0.5s;
 }
+
+@keyframes animate-text {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

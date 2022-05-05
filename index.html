@@ -11,12 +11,12 @@
 
 <body>
   <div class="slider">
-    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide1">
     <input type="radio" name="slide" id="slide2">
     <input type="radio" name="slide" id="slide3">
-    <input type="radio" name="slide" id="slide4">
+    <input type="radio" name="slide" id="slide4" checked>
     <div class="slider-images">
-      <div class="slider-images__wrapper">
+      <div class="slider-images-inner-container">
         <img class="slider__img" src="mems/mem-four.jpg" alt="mem">
         <img class="slider__img" src="mems/mem-one.jpg" alt="mem">
         <img class="slider__img" src="mems/mem-three.jpg" alt="mem">
@@ -32,10 +32,18 @@
         <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem.</p>
       </div>
       <div class="slider-controls">
-        <label for="slide1" class="slider__control" id="dote-1"></label>
-        <label for="slide1" class="slider__control" id="dote-2"></label>
-        <label for="slide1" class="slider__control" id="dote-3"></label>
-        <label for="slide1" class="slider__control" id="dote-4"></label>
+        <label for="slide1" class="slider__control" id="dote-1">
+          <div class="visual"></div>
+        </label>
+        <label for="slide2" class="slider__control" id="dote-2">
+          <div class="visual"></div>
+        </label>
+        <label for="slide3" class="slider__control" id="dote-3">
+          <div class="visual"></div>
+        </label>
+        <label for="slide4" class="slider__control" id="dote-4">
+          <div class="visual"></div>
+        </label>
       </div>
     </div>
     

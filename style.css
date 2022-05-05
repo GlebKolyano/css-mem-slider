@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color: rgb(255, 244, 141);
+  background-color: rgb(240, 230, 141);
   color: rgb(95, 46, 0);
   width: 100%;
   height: 100%;
@@ -58,7 +58,9 @@ input {
 }
 
 .slider-bottom {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .slider-text {
@@ -67,6 +69,7 @@ input {
 
 .slide__text {
   display: none;
+  transition: transform 1s;
 }
 
 .slider-controls {
@@ -103,5 +106,10 @@ input {
 }
 
 
-
+#slide1:checked~.slider-bottom .slider-controls #dote-1 .visual,
+#slide2:checked~.slider-bottom .slider-controls #dote-2 .visual,
+#slide3:checked~.slider-bottom .slider-controls #dote-3 .visual,
+#slide4:checked~.slider-bottom .slider-controls #dote-4 .visual {
+  background-color: rgb(255, 187, 0);
+}
 

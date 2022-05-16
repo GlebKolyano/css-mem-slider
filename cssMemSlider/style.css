@@ -73,9 +73,7 @@ input {
   align-items: center;
 }
 .slide__text {
-  font-size: 1.1rem;
-  display: none;
-  transition: transform 1s;
+  font-size: 0rem;
 }
 
 .slider-controls {
@@ -101,6 +99,7 @@ input {
   width: 2.4rem;
   height: 2.4rem;
   row-gap: 10%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slider__control:hover > .visual {
@@ -148,13 +147,14 @@ input {
 #slide2:checked~.slider-bottom .slider-text .slide__text:nth-child(2),
 #slide3:checked~.slider-bottom .slider-text .slide__text:nth-child(3),
 #slide4:checked~.slider-bottom .slider-text .slide__text:nth-child(4) {
-  display: block;
-  animation: animate-text 0.5s;
+  animation: animate-text 1s;
+  font-size: 1.1rem;
+
 }
 
 @keyframes animate-text {
   from {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     opacity: 0;
   }
 
@@ -164,7 +164,7 @@ input {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 475px) {
   .slider-bottom {
     flex-direction: column;
     justify-content: space-around;
@@ -179,9 +179,20 @@ input {
   .slider {
     width: 70%;
   }
+  html {
+      font-size: 0.4em;
+  }
 }
-@media screen and (max-width: 624px) {
+@media screen and (max-width: 676px) {
   .slider {
     width: 90%;
+  }
+  html {
+    font-size: 0.6em;
+  }
+}
+@media screen and (max-width: 868px) {
+  html {
+    font-size: 0.8em;
   }
 }
